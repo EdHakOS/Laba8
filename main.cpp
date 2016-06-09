@@ -82,7 +82,37 @@ int main()
                 result+=dictionary[i]+" ";
                 main_text_l.erase(pos, dictionary[i].length());
                 main_text.erase(pos, dictionary[i].length());
+                main_text_l.insert(pos, " ");  for (int i=0; i<counter; i++) cout<<dictionary[i]<<" ";
+       cout<<endl;
+       cin>>v;
+    }while(v!=1 && v!=2 && v!=3);
+    switch(v){
+    case 1:{
+        for (int i=0; i<counter; i++){
+            size_t pos = main_text_l.find(dictionary[i]);
+            if (pos != string::npos) {
+                result+=dictionary[i]+" ";
+                main_text_l.erase(pos, dictionary[i].length());
+                main_text.erase(pos, dictionary[i].length());
                 main_text_l.insert(pos, " ");
+                main_text.insert(pos, " ");
+            }
+        }  for (int i=0; i<counter; i++) cout<<dictionary[i]<<" ";
+       cout<<endl;
+       cin>>v;
+    }while(v!=1 && v!=2 && v!=3);
+    switch(v){
+    case 1:{
+        for (int i=0; i<counter; i++){
+            size_t pos = main_text_l.find(dictionary[i]);
+            if (pos != string::npos) {
+                result+=dictionary[i]+" ";
+                main_text_l.erase(pos, dictionary[i].length());
+                main_text.erase(pos, dictionary[i].length());
+                main_text_l.insert(pos, " ");
+                main_text.insert(pos, " ");
+            }
+        }
                 main_text.insert(pos, " ");
             }
         }
