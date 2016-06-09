@@ -35,10 +35,10 @@ int main()
     ifstream input;
     ofstream output;
     do{
-        cout<<"Ââåäèòå ïóòü ê ñëîâàðþ: ";
+        cout<<"Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã¯Ã³Ã²Ã¼ Ãª Ã±Ã«Ã®Ã¢Ã Ã°Ã¾: ";
         cin>>path_dict;
         input.open(path_dict.c_str());
-        if(!input) cout<<"Ñëîâàðü íå íàéäåí.\n";
+        if(!input) cout<<"Ã‘Ã«Ã®Ã¢Ã Ã°Ã¼ Ã­Ã¥ Ã­Ã Ã©Ã¤Ã¥Ã­.\n";
     }
     while(!input);
     string tmp;
@@ -49,11 +49,34 @@ int main()
     }
     input.close();
     do{
-        cout<<"Ââåäèòå ïóòü ê ôàéëó ñ òåêñòîì: ";
+        cout<<"Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã¯Ã³Ã²Ã¼ Ãª Ã´Ã Ã©Ã«Ã³ Ã± Ã²Ã¥ÃªÃ±Ã²Ã®Ã¬: ";
         cin>>path_text;
         input.open(path_text.c_str());
-        if(!input) cout<<"Ôàéë íå íàéäåí.\n";
+        if(!input) cout<<"Ã”Ã Ã©Ã« Ã­Ã¥ Ã­Ã Ã©Ã¤Ã¥Ã­.\n";
     }
+    while(!input);
+    input>>main_text;
+    main_text_l=tolow(main_text);
+    sort_str(dictionary, counter);
+    string result;
+    system("cls");
+    for(;;)   {}
+    while(!input);
+    input>>main_text;
+    main_text_l=tolow(main_text);
+    sort_str(dictionary, counter);
+    string result;
+    system("cls");
+    for(;;)   {
+    do{}
+    while(!input);
+    input>>main_text;
+    main_text_l=tolow(main_text);
+    sort_str(dictionary, counter);
+    string result;
+    system("cls");
+    for(;;)   {
+    do{}
     while(!input);
     input>>main_text;
     main_text_l=tolow(main_text);
@@ -62,14 +85,15 @@ int main()
     system("cls");
     for(;;)   {
     do{
-       cout<<"\n\n        ÌÅÍÞ\n\n";
-       cout<<"1 - Âûäåëèòü ñëîâàðíûå ñëîâà èç òåêñòà\n";
-       cout<<"2 - Äîáàâèòü ñëîâî â ñëîâàðü\n";
-       cout<<"3 - Ñîõðàíèòü ñëîâàðü\n";
+    do{
+       cout<<"\n\n        ÃŒÃ…ÃÃž\n\n";
+       cout<<"1 - Ã‚Ã»Ã¤Ã¥Ã«Ã¨Ã²Ã¼ Ã±Ã«Ã®Ã¢Ã Ã°Ã­Ã»Ã¥ Ã±Ã«Ã®Ã¢Ã  Ã¨Ã§ Ã²Ã¥ÃªÃ±Ã²Ã \n";
+       cout<<"2 - Ã„Ã®Ã¡Ã Ã¢Ã¨Ã²Ã¼ Ã±Ã«Ã®Ã¢Ã® Ã¢ Ã±Ã«Ã®Ã¢Ã Ã°Ã¼\n";
+       cout<<"3 - Ã‘Ã®ÃµÃ°Ã Ã­Ã¨Ã²Ã¼ Ã±Ã«Ã®Ã¢Ã Ã°Ã¼\n";
        cout<<"\n\n\n";
-       cout<<"Âûäåëåííûå èç òåêñòà ñëîâà: \n"<<result<<endl;
-       cout<<"Îñòàâøèéñÿ òåêñò: \n"<<main_text<<endl;
-       cout<<"\n\n\nÑëîâàðü:\n";
+       cout<<"Ã‚Ã»Ã¤Ã¥Ã«Ã¥Ã­Ã­Ã»Ã¥ Ã¨Ã§ Ã²Ã¥ÃªÃ±Ã²Ã  Ã±Ã«Ã®Ã¢Ã : \n"<<result<<endl;
+       cout<<"ÃŽÃ±Ã²Ã Ã¢Ã¸Ã¨Ã©Ã±Ã¿ Ã²Ã¥ÃªÃ±Ã²: \n"<<main_text<<endl;
+       cout<<"\n\n\nÃ‘Ã«Ã®Ã¢Ã Ã°Ã¼:\n";
        for (int i=0; i<counter; i++) cout<<dictionary[i]<<" ";
        cout<<endl;
        cin>>v;
@@ -120,7 +144,7 @@ int main()
         break;
     }
     case 2: {
-        cout<<"Ââåäèòå ñëîâî äëÿ äîáàâëåíèÿ â ñëîâàðü: ";
+        cout<<"Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã±Ã«Ã®Ã¢Ã® Ã¤Ã«Ã¿ Ã¤Ã®Ã¡Ã Ã¢Ã«Ã¥Ã­Ã¨Ã¿ Ã¢ Ã±Ã«Ã®Ã¢Ã Ã°Ã¼: ";
         cin>>tmp;
         dictionary.push_back(tmp);
         counter++;
